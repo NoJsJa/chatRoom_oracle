@@ -1,0 +1,413 @@
+body {
+	position: fixed; right: 0; bottom: 0; 
+ 	min-width: 100%; min-height: 100%; 
+ 	width: auto;
+	height: auto;
+ 	z-index: -100;
+ 	background: url("/chatRoom/img/7.jpg") no-repeat;
+	background-size: cover;
+}
+
+#backButton {
+	top: 10px;
+	right: 0px;
+	font-size: 1em;
+	color: white;
+	height: 2em;
+	width: 5em;
+	line-height: 1em;
+	position:absolute;
+	background-color: #5badff;
+	border-radius: 10%;
+}
+
+#backButton:hover {
+	background-color: #800040;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.footer {
+	margin-top: 500px;
+	width: 60%;
+	height: 25px;
+	clear: both;
+	background-color: #76abab;
+	font-size: 16px;
+	color: red;
+	border: solid 0px white;
+	margin: 0px auto;
+	ilter:alpha(opacity=50);
+	-moz-opacity:0.50;
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+}
+
+#showTable {
+	margin-top: 20px;
+}
+
+#sendTable {
+	margin-top: 20px;
+}
+
+#emojiDiv{
+	width: 100%;
+	height: 40px;
+	min-height: 40px;
+	max-height: 40px;
+	clear: both;
+	overflow-y: scroll;
+	background-color: #528787;
+}
+
+.emoji {
+	width: 40px;
+	height: 40px;
+	margin: 0px auto;
+    margin-top: 0px;
+    margin-right: 1.5%;
+    float: left;
+}
+	
+.emoji img {
+	width: 100%;
+	height: 100%;
+}
+
+.tableBorder {
+	width:auto;
+	height: auto;
+	max-height: 550px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.tableBorder2 {
+ 	border: solid 1px white; 
+	width:auto;
+	height: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: solid 0px;
+	clear: both;
+}
+
+table {
+	margin: 0px auto;
+	width: 100%;
+	min-width: 600px;
+	max-width: 1100px;
+	color: white;
+	table-layout: fixed; /* 设置单元格不自动适应 */
+	border: solid 0px;
+}
+
+
+td {
+	text-align: center;
+}
+
+.blueTd {
+	width: 100%;
+	background-color: #76abab;
+	color: white;
+	text-align: left;
+	border: solid 2px white;
+}
+
+.nameTd {
+	background-color: #52a5a5;
+	color: #ffffff;
+	text-align: center;
+	width: 60%;
+	margin: 0px auto;
+	-webkit-box-shadow: 10px 10px 25px #000000;
+    -moz-box-shadow: 10px 10px 25px #000000;
+    box-shadow: 10px 10px 25px #000000;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.messageTd {
+	position: relative;
+	text-align: center;
+	color: #800000;
+	width: auto;
+	margin: inherit; 
+	height:auto;
+	min-height: 30px;
+	background:#dedede;
+	border-radius: 8px; /* 圆角 */
+	ilter:alpha(opacity=60);
+	-moz-opacity:0.70;
+	-khtml-opacity: 0.70;
+	opacity: 0.70;
+}
+/* 设置圆角 */
+.arrow {
+	position:absolute;
+	top:6px;
+	left:-16px; /* 圆角的位置需要细心调试哦 */
+	width:0;
+	height:0;
+	font-size:0;
+	border:solid 8px;
+	border-color: #8080c0 #dedede #8080c0 #8080c0;
+}
+
+.td3 {
+	width: 14%;
+	background-color: #5badff;
+	border: solid 0px;
+	width: 10%;
+}
+
+.emojiTd {
+	width: 10%; 
+	border: solid 2px white;
+}
+
+.headTd {
+	background-color: #c0c0c0;
+	border: solid 5px white;
+	color: #800000;
+	border-radius: 30%;
+}
+
+.quickTd {
+	width: 40%; 
+	border: solid 2px white;
+}
+
+#onlineMessage {
+	border: solid 1px white;
+	width: 100%;	
+}
+
+#onlineCount:hover {
+	-webkit-box-shadow: 2px 2px 10px #800080 inset;
+	box-shadow: 2px 2px 10px #800080 inset;
+}
+
+#inputMessage {
+	width: 75%;
+	height: 50px;
+}
+
+.inputTd {
+	width: 40%;
+	column-span: 3;
+}
+
+#sendButton, #logoutButton {
+	font-family: 雅黑;
+	font-size: 15px;
+	width: 10%;
+	height: auto;
+	border: solid 3px white;
+	background-color: #0000a0;
+	text-align: center;
+	border-radius: 10%;
+	color: white;
+}
+
+#sendButton:hover,#logoutButton:hover {
+    background-color: white;
+    color: #0000a0;
+}
+
+select {
+	width: 100%;
+	color: #ffffff;
+	background-color: #8cb9b9;
+}
+
+#quickList {
+	width: 100%;
+	
+}
+
+#header {
+	background-color: #9bcdff;
+	text-align: center;
+	width: 100%;
+	height: 70px;
+	margin: 0px auto;
+	border: solid 2px grey;
+	border-radius: 30%;
+	min-width: 1150px;
+	margin-top: 50px;
+	ilter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+	line-height: 70px;
+}
+
+#border {
+	width: 60%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+	min-width: 600px;
+	max-width: 1100px;
+	background-color: #8080c0;
+	display: inline-block;
+	border: solid 1px white;
+}
+/* 边框的阴影 */
+.shadow {
+	-webkit-box-shadow: 10px 10px 25px #000040;
+    -moz-box-shadow: 10px 10px 25px #000040;
+    box-shadow: 10px 10px 25px #000040;
+}
+
+.inset-shadow {
+	-webkit-box-shadow: 2px 2px 10px #400040 inset;
+	box-shadow: 2px 2px 10px #400040 inset;
+}
+
+#headerLabel {
+	font-family: 楷体;
+	font-size: 50px;
+	color: #400080;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.onlineDiv, .fileDiv {
+ 	display: inline-block;
+	width: 10%;
+	height: auto;
+	float: left;
+	min-height: 100px;
+	max-height: 600px;
+	min-width: 100px;
+	background-color: #ecfffe;
+	color: #0000a0;
+	margin-top: 50px; 
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 10%;
+	font-family: 雅黑;
+	font-size: larger;
+}
+
+.total{
+	margin: 0px auto;
+	height: 100%;
+	width: 80%;
+	min-width: 1150px;
+	text-align: center;
+	color: white;
+}
+
+*{
+	ilter:alpha(opacity=96);
+	-moz-opacity:0.96;
+	-khtml-opacity: 0.96;
+	opacity: 0.96;
+	font-weight:bold;
+}
+
+.onlineAccount {
+	display: inline-block;
+	width: 10%;
+	height: 25px;
+	min-width: 100px;
+	background-color: #408080;
+	color: #ffffff;
+	margin-top: 3px; 
+	margin-bottom: 2px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 10%;
+	font-family: 雅黑;
+	font-size: large;
+	clear: both;
+}
+
+#imgSpan {
+	overflow: hidden;
+	border: solid 1px white; 
+	display: inline-block;
+	width: 80%;
+	height: 25px;
+	cursor: pointer;
+	background-color: #808080;
+	padding: 2px;
+}
+
+#uploadImg {
+	ilter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity: 0;
+	cursor: pointer;
+	font-weight:0;
+	display: block;
+	margin: 0px auto;
+}
+
+#fileTotal{
+	float: right;
+	margin-left: 0;
+	margin-right: 0;
+	width: 15%;
+	min-height: 0px;
+}
+
+#fileTitle{
+	color: #400080;
+	font-size: 21px;
+}
+
+#file, #file a{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #346b6b;
+}
+
+#fileChoose, #fileUpload{
+	width: 100%;	
+	background-color: #6bb6b6;
+	color: #800080;
+	margin-bottom: 5px;
+}
+
+#fileUploadDiv{
+	width: 90%;
+	margin: 5px auto;
+	
+}
+
+.opacity{
+	ilter:alpha(opacity=96);
+	-moz-opacity:0.96;
+	-khtml-opacity: 0.96;
+	opacity: 0.96;
+}
+
+.headerImgMessage{
+	height: 30px;
+	width: 30px;
+	float: left;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.field{
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 50px;
+	min-width: 1000px;
+}
+
+#conditionField{
+	border: solid 2px blue;
+	background-color: #c0c0c0;
+}
+
+#resultField{
+	border: solid 2px green;
+	background-color: #c0c0c0;
+	margin-bottom: 50px;
+}
+
+#selfInfoField {
+	border: solid 2px #800040;
+	background-color: #c0c0c0;
+}
+
+#selfInfoField:hover, #conditionField:hover, #resultField:hover {
+	-webkit-box-shadow: 2px 2px 10px black inset;
+	box-shadow: 2px 2px 10px black inset;
+}
+
+#queryCondition {
+	color: #004080;
+	margin: 0px auto;
+	width: 60%;
+	margin-top: 20px;
+}
+
+#nameCondition, #sexCondition, #activityCondition {
+	text-align: left;
+	clear: both;
+}
+
+#nameCondition input, #sexCondition select, #activityCondition select {
+	width: 100%;
+}
+
+#headTr {
+	border: solid 1px white;
+	border: solid 1px;
+}
+
+#headTr td{
+	background-color: grey;
+	color: #00ecec;
+	border: solid 1px;
+	text-align: center;
+}
+
+.contentTr  td{
+	background-color: white;
+	font-family: "微软雅黑 Light";
+	font-size: 0.7em;
+}
+
+#headTable{
+	margin: 0px auto;
+	width: 80%;
+}
+
+#pageControl {
+	margin: 0px auto;
+}
+
+
+/* 边框的阴影 */
+.shadow {
+	-webkit-box-shadow: 10px 10px 25px #800080;
+    -moz-box-shadow: 10px 10px 25px #800080;
+    box-shadow: 10px 10px 25px #800080;
+}
+
+.shadow2 {
+	-webkit-box-shadow: 10px 10px 25px black;
+    -moz-box-shadow: 10px 10px 25px black;
+    box-shadow: 10px 10px 25px black;
+}
+
+.inset-shadow {
+	-webkit-box-shadow: 2px 2px 10px black inset;
+	box-shadow: 2px 2px 10px black inset;
+}

@@ -1,0 +1,173 @@
+
+#totalDiv2 {
+	width: 800px;
+	height: 700px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 120px;
+	border: dashed 2px #8a3ea7;
+}
+
+#titleDetails {
+	width: 90%;
+	height: 10%;
+	border: solid 1px #008040;
+	float: left;
+	line-height: 70px;
+	background-color: #b5fcff;
+	border-radius: 20%;
+	font-size: 2em;
+    font-family: 幼圆;
+	margin-bottom: 20px;
+	color: #800080;
+}
+
+#closeSession {
+	width: 10%;
+	height: 10%;
+	float: left;
+	line-height: 70px;
+	background-color: #800040;
+	color: white;
+	border-radius: 50%;
+}
+
+#messageDetails {
+	width: 100%;
+	height: 70%;
+	border: solid 1px #008040;
+	clear: both;
+}
+
+#message2{
+	width: 70%;
+	height: 100%;
+	float: left;
+	overflow-y: scroll;
+	background-color: #b1b1b1;
+}
+
+#info {
+	width: 30%;
+	float: left;
+	border: solid 3px #800040;
+}
+
+#senderImgInfo {
+	width: 100%;
+	height: 25%;
+	background: url("/chatRoom/img/headPicture/8.jpg") center no-repeat;
+	background-size: contain;
+}
+
+#sendtoImgInfo {
+	width: 100%;
+	height: 25%;
+	background: url("/chatRoom/img/headPicture/9.jpg") center no-repeat;
+	background-size: contain;
+}
+
+#otherInfo {
+	width: 100%;
+	height: 50%;
+}
+
+#nameDiv, #sexDiv, #activityDiv{
+	width: 100%;
+	height: 20%;
+	border: solid 1px white;
+	line-height: 40px;
+	background-color: #528787;
+}
+
+
+#mottoDiv {
+	width: 100%;
+	height: 20%;
+	border: solid 1px white;
+	line-height: 40px;
+	background-color: #528787;
+    overflow-y: scroll;
+}
+
+#videoDiv{
+	width: 100%;
+	height: 20%;
+	border: solid 1px white;
+	line-height: 40px;
+	background-color: #528787;
+}
+
+#video{
+	line-height: 40px;
+    color: #9a3226;
+    width: 100%;
+}
+
+#emojiDiv {
+	width: 100%;
+	height: 7%;
+	background-color: #528787;
+}
+
+.emoji {
+	width: 35px;
+	height: 35px;
+	margin: 0px auto;
+    margin-top: 0px;
+    margin-right: 10px;
+    float: left;
+}
+
+.emojiMessage {
+	margin: 0px auto;
+	float: none;
+}
+
+.emoji img {
+	width: 100%;
+	height: 100%;
+}
+
+#inputDiv {
+	width: 80%;
+	height: 10%;
+	border: ridge 5px #8080ff;
+	float: left;
+	margin-top: 3%;
+}
+
+#sendButtonDiv {
+	width: 20%;
+	height: 8%;
+	border: solid 5px white;
+	float: left;
+	line-height: 40px;
+	font-size: 26px;
+	background-color: #8080ff;
+	color: white;
+	margin-top: 4%; 
+    border-radius: 20%;
+}
+
+#messageInput {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	font-size: 20px;
+	color: #ac0056;
+}
+
+*{
+	text-align: center;
+	box-sizing: border-box; 
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+

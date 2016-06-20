@@ -1,0 +1,51 @@
+#imgDiv {
+	margin: 0px auto;
+	width: 50%;
+	height: auto;
+	clear: both;
+	border: solid 2px #800080;
+	border-radius: 20%;
+}
+
+#backDiv {
+	clear: both;
+	margin: 0px auto;
+	margin-top: 50px;
+	text-align: center;
+	width: 50%;
+}
+
+#errorImg {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	border-radius: 20%;
+}
+
+#backA {
+	font-family: 雅黑;
+	font-size: 16px;
+	width: 60%;
+	height: auto;
+	background-color: #800080;
+	text-align: center;
+	color: #ffffff;
+	margin: 0px auto;
+	text-decoration: none;
+	display: block;
+	-webkit-box-shadow: 10px 10px 25px #1f29a0;
+    -moz-box-shadow: 10px 10px 25px #1f29a0;
+    box-shadow: 10px 10px 25px #1f29a0;
+    border: solid 1px white;
+}
+
+body {
+	background-color: #cdcdcd;
+}
+
+
+
+
+
+
+

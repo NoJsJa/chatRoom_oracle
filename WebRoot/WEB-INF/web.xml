@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>chatRoom</display-name>
+  <filter>
+		<filter-name>requestAccessFilter</filter-name>
+		<filter-class>filter.requestAccessFilter</filter-class>
+	</filter>
+	 <filter>
+		<filter-name>outputReplaceFilter</filter-name>
+		<filter-class>filter.outputReplaceFilter</filter-class>
+		<init-param>
+			<param-name>file</param-name>
+			<param-value>/WEB-INF/sensitive.properties</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>filter.characterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>characterEncoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>enabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+<!-- 	<filter>
+		<filter-name>GZipFilter</filter-name>
+		<filter-class>filter.GZipFilter</filter-class>
+	</filter> -->
+	
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlet.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>messageServlet</servlet-name>
+    <servlet-class>servlet.messageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>servlet.logoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateOnline</servlet-name>
+    <servlet-class>servlet.updateOnline</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>handleSingleAction</servlet-name>
+    <servlet-class>servlet.handleSingleAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>handle single chat message</description>
+    <display-name>singleChat</display-name>
+    <servlet-name>singleChat</servlet-name>
+    <servlet-class>servlet.singleChat</servlet-class>
+  </servlet>
+
+	<!-- <session-config>
+		<session-timeout>10</session-timeout>
+	</session-config> -->
+
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  	<filter-mapping>
+  		<filter-name>requestAccessFilter</filter-name>
+  		<url-pattern>/servlet/*</url-pattern>
+  		<url-pattern>/dao/*</url-pattern>
+  		<url-pattern>/chatRoom.jsp</url-pattern>
+  		<url-pattern>/homePage.jsp</url-pattern>
+  		<url-pattern>/img/*</url-pattern>
+  	</filter-mapping>
+   	<filter-mapping>
+  		<filter-name>outputReplaceFilter</filter-name>
+  		<url-pattern>/servlet/messageServlet</url-pattern>
+  	</filter-mapping>
+<!-- 	<filter-mapping>
+		<filter-name>GZipFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/servlet/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>messageServlet</servlet-name>
+    <url-pattern>/servlet/messageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/servlet/logoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateOnline</servlet-name>
+    <url-pattern>/servlet/updateOnline</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>handleSingleAction</servlet-name>
+    <url-pattern>/servlet/handleSingleAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>singleChat</servlet-name>
+    <url-pattern>/servlet/singleChat</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <listener>
+  	<listener-class>listener.MyContextListener</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>listener.MySessionListener</listener-class>
+  </listener>
+  
+  <security-constraint>
+  	<display-name>chatRoom security constraint</display-name>
+  	<web-resource-collection>
+  		<web-resource-name>proteced area</web-resource-name>
+  		<!-- 受保护的资源URL -->
+  		<url-pattern>/files/readme.txt</url-pattern>
+  	</web-resource-collection>
+  	
+  	<auth-constraint>
+  		<!-- 定义允许访问受保护web资源的角色 -->
+  		<role-name>manager-gui</role-name>
+  		<role-name>admin-gui</role-name>
+  		<role-name>visitor</role-name>
+  	</auth-constraint>
+  </security-constraint>
+  
+  <login-config>
+  	<auth-method>DIGEST</auth-method>
+  	<realm-name>read me</realm-name>
+  </login-config>
+    <!-- <resource-ref>
+    	<description>DB connection</description>
+    	<res-ref-name>jdbc/databaseWeb</res-ref-name>
+    	<res-type>javax.sql.DataSource</res-type>
+    	<res-auth>Container</res-auth>
+    </resource-ref> -->
+  
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
