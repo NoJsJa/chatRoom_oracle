@@ -34,7 +34,7 @@
 	font-size: 1em;
 	border-radius: 50%;
 	border: solid 2px white;
-	background-color: #008040;
+	background-color: #21d641;
 	color: white;
 }
 
@@ -204,8 +204,8 @@ body {
  	width: auto;
 	height: auto;
  	z-index: -100;
- 	background: url("/chatRoom/img/10.jpg") no-repeat;
-    background-size: cover;
+ 	background: url("/chatRoom/img/3.jpg")no-repeat;
+ 	background-size: cover;
 }
 
 #minDiv{

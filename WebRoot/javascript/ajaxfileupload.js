@@ -1,9 +1,7 @@
 
 jQuery.extend({
 	
-
-    createUploadIframe: function(id, uri)
-	{
+    createUploadIframe: function(id, uri){
 			//create frame
             var frameId = 'jUploadFrame' + id;
             var iframeHtml = '<iframe id="' + frameId + '" name="' + frameId + '" style="position:absolute; top:-9999px; left:-9999px"';

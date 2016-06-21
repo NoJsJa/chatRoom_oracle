@@ -58,11 +58,11 @@ $(function() {
 	var sendButton = document.getElementById("sendButtonDiv");
 	var inputDiv = document.getElementById("inputDiv");
 	
-	mouseOver(logoutButton,"#ffffff", "#008040");
-	mouseOut(logoutButton,"#008040", "#ffffff");
+	mouseOver(logoutButton,"#ffffff", "#21d641");
+	mouseOut(logoutButton,"#21d641", "#ffffff");
 	
-	mouseOver(closeSession,"#ffffff", "#800040");
-	mouseOut(closeSession,"#800040", "#ffffff");
+	mouseOver(closeSession,"#ffffff", "#9937a4");
+	mouseOut(closeSession,"#9937a4", "#ffffff");
 	
 	mouseOver(sendButton,"#ffffff", "#8080ff");
 	mouseOut(sendButton,"#8080ff", "#ffffff");	
@@ -604,6 +604,7 @@ function changeImg() {
 	var imgUrl = "/chatRoom/img/" + imgIndex + ".jpg";
 	var background = document.getElementById("background");
 	background.style.background = "url("  + "'" + imgUrl+ "'" + ")" + " no-repeat";
+	background.style.backgroundSize = "cover";	
 }
 
 
