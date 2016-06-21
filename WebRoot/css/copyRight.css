@@ -1,0 +1,11 @@
+.copyRight{
+	bottom: .5em;
+	margin: 0px auto;
+	position: absolute;
+	width: 100%;
+	color: #c0c0c0;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	font-size: 1em;
+}

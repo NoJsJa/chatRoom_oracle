@@ -30,5 +30,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="backDiv">
     	<a id="backA" href="${path}/index.jsp">Go登录页</a>
     </div>
+    
   </body>
 </html>

@@ -15,6 +15,7 @@ request.setCharacterEncoding("utf-8");
     <title>登录 启航聊天室</title>
 
 	<link rel="stylesheet" type="text/css" href="${path}/css/index.css">
+	<link rel="stylesheet" type="text/css" href="${path}/css/copyRight.css">
 	<script type="text/javascript" src="${path}/javascript/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
 	<script type="text/javascript" src="${path}/javascript/index.js"></script>
@@ -53,10 +54,13 @@ request.setCharacterEncoding("utf-8");
     			<td></td>
     			<td>
     				<input type="button" name="loginSubmit" id="loginSubmit" value="登录">
-    				<input type="button" name="signUp" id="signUp" value="注册">
+    				<input type="button" name="signUp" id="signUp" title="输入账户信息即刻注册！"  value="注册">
     			</td>
     		</tr>
     	</table>
     </form>
+    
+    <div class="copyRight">Copyright © 2016 <a href="http://www.cuit.edu.cn">www.cuit.edu.cn</a>. All rights reserved. </div>
+    
   </body>
 </html>

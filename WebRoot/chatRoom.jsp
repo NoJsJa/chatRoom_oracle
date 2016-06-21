@@ -36,7 +36,7 @@ request.setAttribute("current_user", current_user);
   	<div id="border" class="inset-shadow">
   		<div class="tableBorder" id="tableBorder">
 	  		<table id="showTable">
-	  		<tr><td class="headTd" colspan="2">---聊天信息---</td></tr>
+	  		<tr><td class="headTd" colspan="2">- - - 聊 天 信 息 - - -</td></tr>
 	  		</table>
   		</div>
   		<div id="emojiDiv">
@@ -61,15 +61,15 @@ request.setAttribute("current_user", current_user);
 		    		<td class="emojiTd">
 		    			<select id="emojiList">
 		    				<option value="1"></option>
-		    				<option value="2">T_T ||</option>
-		    				<option value="3">(=^_^=) </option>
-		    				<option value="4">≧◇≦</option>
-		    				<option value="5">ლ(°Д°ლ)</option>
-		    				<option value="6">(#￣▽￣#)</option>
-		    				<option value="7">( $ _ $ )</option>
-		    				<option value="8">⊙ω⊙</option>
-		    				<option value="9">♀(￣▽￣)/</option>
-		    				<option value="10">≧▂≦</option>
+		    				<option value="2">  &#12288 &#12288 T_T ||</option>
+		    				<option value="3">  &#12288 &#12288 (=^_^=) </option>
+		    				<option value="4">  &#12288 &#12288 ≧◇≦</option>
+		    				<option value="5">  &#12288 &#12288 ლ(°Д°ლ)</option>
+		    				<option value="6">  &#12288 &#12288 (#￣▽￣#)</option>
+		    				<option value="7">  &#12288 &#12288 ( $ _ $ )</option>
+		    				<option value="8">  &#12288 &#12288 ⊙ω⊙</option>
+		    				<option value="9">  &#12288 &#12288 ♀(￣▽￣)/</option>
+		    				<option value="10">  &#12288 &#12288 ≧▂≦</option>
 		    			</select>
 		    		</td>
 		    	</tr>
@@ -86,7 +86,7 @@ request.setAttribute("current_user", current_user);
 		</div>
 		
 	<div id="fileTotal" class="fileDiv inset-shadow">
-			<div id="fileTitle" title="click me!">文件列表</div>
+			<div id="fileTitle" title="点我啊！">文件列表</div>
 			<div id="fileUploadDiv" class="opacity">
 				<input type="file" id="fileChoose" name="fileChoose">
 				<input type="button" id="fileUpload" value="上传">
@@ -101,7 +101,7 @@ request.setAttribute("current_user", current_user);
   	</div>
   	
   	<!-- 返回主页按钮 -->
-    <input type="button" id="backButton" value=" <= ">
+    <input type="button" id="backButton" title="返回我的空间" value=" <= ">
   	
   </body>
 </html>

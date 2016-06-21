@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</div>
     	
     	<!-- 导航区域 -->
-    	<div id="message" class="footerDiv shadow4" name="footer">消息</div>
+    	<div id="message" class="footerDiv shadow4" name="footer" title="我不能点额.">消息</div>
     	<div id="friends" class="footerDiv shadow4" name="footer">朋友</div>
     	<div id="setting" class="footerDiv shadow4" name="footer">设置</div>
     	<div id="chatRoom" class="footerDiv shadow4" name="footer">聊天室</div>
@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			<div id="sendtoImgInfo"></div>
     			<div id="otherInfo">
     				<div id="videoDiv"><input type="button" value="◎ 视频通话" id="video" disabled="disable"></div>
-    				<div id="nameDiv">----好友资料----</div>
+    				<div id="nameDiv">- - - 好 友 资 料 - - -</div>
     				<div id="sexDiv">【性别】</div>
     				<div id="mottoDiv">【座右铭】</div>
     				<div id="activityDiv">【活跃度】</div>
@@ -78,7 +78,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</div>
     	
     	<!-- 改变背景图片 -->
-    	<input type="button" id="nextButton" value=" ↑↓ ">
+    	<input type="button" id="nextButton" title="切换主题"  value=" ↑↓ ">
   </div>
+  
   </body>
 </html>

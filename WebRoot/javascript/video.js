@@ -68,7 +68,10 @@ $(function() {
             }, 100);
         },false);
         video.play();
-
+        /*终止视频传输*/
+        $('#backButton').click(function () {
+           video.pause();
+        });
     }});
     /*#send绑定事件click*/
     $(document).on('click','#send', function () {
@@ -92,11 +95,6 @@ $(function() {
             alert('消息不能为空！');
         }
     }
-
-    /*返回主页*/
-    $("#backButton").click(function(){
-        window.location.href = "/chatRoom/homePage.jsp";
-    });
 
     /*接收键盘事件，响应Enter键发送消息*/
     document.onkeydown = function(event){

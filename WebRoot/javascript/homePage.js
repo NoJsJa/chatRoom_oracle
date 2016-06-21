@@ -89,9 +89,8 @@ function videoRequest(){
     $('#messageInput').val('--- 请求视频通话 --- ');
     sendSingleMessage();
     hiddenSession(name_sendTo);
-    setTimeout(function(){
-    	window.location.href = "/chatRoom/video.jsp?sender=" + name_sender + "&sendTo=" + name_sendTo;
-    }, 1000);
+   /* 结束当前会话并打开新窗口建立视频通话*/
+    window.open("/chatRoom/video.jsp?sender=" + name_sender + "&sendTo=" + name_sendTo);
 }
 
 //得到背景头像

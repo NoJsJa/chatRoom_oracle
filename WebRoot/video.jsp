@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 
 <!-- 返回主页按钮 -->
-<input type="button" id="backButton" value=" <= ">
+<input type="button" id="backButton" value="⊙.⊙">
 
 </body>
 </html>
