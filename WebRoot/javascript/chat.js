@@ -114,9 +114,10 @@ function fileShow(){
 	$("#fileUploadDiv").toggle("fast");
 }
 
-//返回
+//关闭窗口返回
 function back() {
-	window.location.href = "/chatRoom/homePage.jsp";
+	
+	window.close();
 }
 
 //发送消息

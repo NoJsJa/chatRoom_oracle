@@ -142,13 +142,13 @@ function logout() {
 //进入聊天室
 function enterChatRoom() {
 	
-	window.location.href = "/chatRoom/chatRoom.jsp";
+	window.open( "/chatRoom/chatRoom.jsp");
 }
 
 //进入设置界面
 function updateSetting() {
 	
-	window.location.href = "/chatRoom/setting.jsp";
+	window.open("/chatRoom/setting.jsp");
 } 
 
 var messageCount = 0;

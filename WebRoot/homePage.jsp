@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>home page</title>
+    <title>主页 homepage</title>
 	
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage2.css">
