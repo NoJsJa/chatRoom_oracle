@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage2.css">
-	<script type="text/javascript" src="${path}/javascript/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
 	<script type="text/javascript" src="${path}/javascript/homePage.js"></script>
 

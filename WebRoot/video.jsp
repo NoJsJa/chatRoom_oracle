@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
     <meta charset="UTF-8">
     <title>视频通话</title>
-    <script src="${path}/javascript/jquery-2.1.4.js"></script>
+    <script src="${path}/javascript/lib/jquery-2.1.4.js"></script>
     <script src="${path}/javascript/video.js"></script>
     <link rel="stylesheet" href="${path}/css/video.css">
 </head>

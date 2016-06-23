@@ -16,10 +16,10 @@ request.setAttribute("current_user", current_user);
     <title>启航ROOM</title>
     
 	<link rel="stylesheet" type="text/css" href="${path}/css/chatRoom.css">
-	<script type="text/javascript" src="${path}/javascript/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="${path}/javascript/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
-	<script type="text/javascript" src="${path}/javascript/json2.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/json2.js"></script>
 	<script type="text/javascript" src="${path}/javascript/ajaxfileupload.js"></script>
 	<script type="text/javascript" src="${path}/javascript/chat.js"></script>
 

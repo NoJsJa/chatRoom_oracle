@@ -16,11 +16,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="${path}/css/setting.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/setting2.css">
 	
-	<script type="text/javascript" src="${path}/javascript/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="${path}/javascript/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
 	<script type="text/javascript" src="${path}/javascript/setting.js"></script>
-	<script type="text/javascript" src="${path}/javascript/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/ajaxfileupload.js"></script>
 
   </head>
   

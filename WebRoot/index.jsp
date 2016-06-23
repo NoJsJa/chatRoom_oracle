@@ -16,7 +16,7 @@ request.setCharacterEncoding("utf-8");
 
 	<link rel="stylesheet" type="text/css" href="${path}/css/index.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/copyRight.css">
-	<script type="text/javascript" src="${path}/javascript/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
 	<script type="text/javascript" src="${path}/javascript/index.js"></script>
   </head>
