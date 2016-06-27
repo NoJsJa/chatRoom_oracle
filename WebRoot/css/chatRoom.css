@@ -1,11 +1,12 @@
-body {
-	position: fixed; right: 0; bottom: 0; 
- 	min-width: 100%; min-height: 100%; 
- 	width: auto;
-	height: auto;
- 	z-index: -100;
- 	background: url("/chatRoom/img/7.jpg") no-repeat;
-	background-size: cover;
+
+.background {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url("/chatRoom/img/1.jpg") no-repeat;
+    background-size: cover;
 }
 
 #backButton {
@@ -328,6 +329,11 @@ select {
 	font-family: 雅黑;
 	font-size: large;
 	clear: both;
+}
+
+.onlineAccount:hover {
+	background-color:white;
+	color: #408080;
 }
 
 #imgSpan {

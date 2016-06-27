@@ -19,17 +19,20 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/activation.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/commons-beanutils-1.8.0.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/commons-collections-3.2.1.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/commons-lang-2.5.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/ezmorph-1.0.6.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/json-lib-2.4-jdk15.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/mail.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/tomcat/mysql-connector-java-5.1.38-bin.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/fileupload/commons-fileupload.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/jar/fileupload/commons-io.jar"/>
-	<classpathentry kind="lib" path="E:/java_myeclipse/pack/oracle/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/activation.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/java-websocket-1.3.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ojdbc6.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>主页 homepage</title>
+    <title>启航 ZONE</title>
 	
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/homePage2.css">
@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</div>
     	
     	<!-- 导航区域 -->
-    	<div id="message" class="footerDiv shadow4" name="footer" title="我不能点额.">消息</div>
+    	<div id="blog" class="footerDiv shadow4" name="footer">博客</div>
     	<div id="friends" class="footerDiv shadow4" name="footer">朋友</div>
     	<div id="setting" class="footerDiv shadow4" name="footer">设置</div>
     	<div id="chatRoom" class="footerDiv shadow4" name="footer">聊天室</div>

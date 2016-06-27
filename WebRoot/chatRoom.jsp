@@ -13,8 +13,8 @@ request.setAttribute("current_user", current_user);
   <head>
     <base href="<%=basePath%>">
     
-    <title>启航ROOM</title>
-    
+    <title>启航 ROOM</title>
+
 	<link rel="stylesheet" type="text/css" href="${path}/css/chatRoom.css">
 	<script type="text/javascript" src="${path}/javascript/lib/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="${path}/javascript/lib/jquery-migrate-1.2.1.min.js"></script>
@@ -26,6 +26,8 @@ request.setAttribute("current_user", current_user);
   </head>
   
   <body>
+  <!-- 背景图片 -->
+    <div class="background"></div>
   	<div id="header" class="inset-shadow"><label id="headerLabel">启航 ROOM</label></div>
   	<div class="total">
   	<div class="onlineDiv inset-shadow" id="onlineDiv">|在线用户|
@@ -41,7 +43,7 @@ request.setAttribute("current_user", current_user);
   		</div>
   		<div id="emojiDiv">
   		</div>
-  		
+
 		<div class="tableBorder2" >
 			<table id="sendTable">
 		    	<tr>

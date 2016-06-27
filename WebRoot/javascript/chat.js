@@ -330,11 +330,17 @@ function onlineChange(request) {
 		}
 		var n = 0
 		for(; n < name.length; n++) {
-			var accountDiv = document.createElement("div");
-			accountDiv.setAttribute("class", "onlineAccount");
-			accountDiv.setAttribute("name", "accountDiv");
-			accountDiv.innerHTML = name[n];
-			onlineCount.appendChild(accountDiv);
+			(function(){
+				var m = n;
+				var accountDiv = document.createElement("div");
+				accountDiv.setAttribute("class", "onlineAccount");
+				accountDiv.setAttribute("name", "accountDiv");
+				accountDiv.innerHTML = name[n];
+				accountDiv.onclick = function(){
+					window.open("/chatRoom/blog.html#!/blogList/" + name[m]);
+				};
+				onlineCount.appendChild(accountDiv);
+			})();
 		}
 		document.getElementById("onlineCount").innerHTML = "在线人数->" + n;
 	}

@@ -11,8 +11,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>资料 & 添加</title>
+    <title>启航 SETTING</title>
 
+	<!-- EL表达式 -->
 	<link rel="stylesheet" type="text/css" href="${path}/css/setting.css">
 	<link rel="stylesheet" type="text/css" href="${path}/css/setting2.css">
 	

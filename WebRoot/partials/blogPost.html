@@ -1,0 +1,45 @@
+<!-- 背景图片 -->
+  <div class="background"></div>
+
+<header class="title shadow">启航 Blog</header>
+
+<div class="container margin-top containerWidth">
+    <div class="row">
+        <div class="col-md-3" ng-include src="'/chatRoom/partials/blogMenu.html'"></div>
+        <div class="col-md-9 border blogMain">
+            <div class="blog-post-label blog-text-style">{{blogPost.title}}</div>
+            <div class="blog-entry-wrapper">
+                <div class="blog-intro-text blog-text-style">
+                    <i>日期: {{blogPost.dates}}</i>
+                </div>
+
+                <div class="blog-entry-outer" ng-bind-html="blogPost.content | trustHtml">
+                    <!--{{blogPost.content}}-->
+                </div>
+
+                <div class="input-group commentInputDiv">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </span>
+                    <input type="text" ng-model="content" class="col-md-12" placeholder="请输入留言">
+                </div>
+
+                <div id="publish">
+                    <button type="button" class="btn btn-success" ng-click="publish();">发表留言</button>
+                </div>
+
+                <div class="blog-comment-wrapper">
+                    <div class="blog-comment-label blog-text-style">评论</div>
+                    <div class="blog-entry-comments" ng-repeat="comment in blogPost.comments">
+                        <label>{{comment.commentator}}: </label>
+                        <label>{{comment.content}}</label><br>
+                        <label>{{comment.dates}}</label>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>

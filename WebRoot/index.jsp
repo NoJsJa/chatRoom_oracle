@@ -59,7 +59,7 @@ request.setCharacterEncoding("utf-8");
     		</tr>
     	</table>
     </form>
-    
+  
     <div class="copyRight">Copyright © 2016 <a href="http://www.cuit.edu.cn">www.cuit.edu.cn</a>. All rights reserved. </div>
     
   </body>

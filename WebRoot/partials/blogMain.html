@@ -1,0 +1,52 @@
+
+<!-- 背景图片 -->
+  <div class="background"></div>
+
+<header class="title shadow">启航 Blog</header>
+
+<div class="container margin-top containerWidth">
+    <div class="row">
+        <div class="col-md-3" ng-include src="'/chatRoom/partials/blogMenu.html'">
+        </div>
+        <div class="col-md-7 border blogMain">
+            <div class="blog-post-label">所有博客</div>
+            <div class="post-wrapper">
+                <div ng-repeat="blogPost in blogList">
+                    <div class="blog-post-outer">
+
+                        <div class="blog-intro-text blog-title">
+                            {{blogPost.title}}
+                        </div>
+
+                        <div class="blog-intro-text">
+                            <i>日期: {{blogPost.dates}}</i>
+                        </div>
+
+                    	<div class="blog-intro-text blog-abstract" readonlxy="readonly" style="overflow:hidden">
+                        	{{blogPost.abstract}}
+                   		</div>
+                   		
+                        <div class="blog-read-more">
+                            <a href="#!blogPost/{{blogPost.author}}/{{blogPost.title}}">____更多____</a>
+                        </div>
+
+                        <div class="blog-delete">
+                            <button title="删除这篇博文" type="button" class="btn btn-sm btn-danger"
+                                    ng-click="deleteBlog(blogPost.title,blogPost.author);"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 border">
+            <div id="headImg"><img alt="头像" src="{{authorImg}}"></div>
+            <div id="introduction">
+            	<div id="name" class="selfInfo">{{authorName}}</div>
+            	<div id="sex" class="selfInfo">{{authorSex}}</div>
+            	<div id="motto" class="selfInfo">{{authorMotto}}</div>
+            	<div id="level" class="selfInfo">{{authorActivity}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

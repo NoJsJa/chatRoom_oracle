@@ -1,0 +1,27 @@
+<!-- 背景图片 -->
+<div class="background"></div>
+<header class="title shadow">启航 Blog</header>
+
+<div class="container margin-top containerWidth">
+    <div class="row">
+        <div class="col-md-3" ng-include src="'/chatRoom/partials/blogMenu.html'">
+        </div>
+        <div class="col-md-7 border blogMain">
+            <!--遍历所有标签-->
+            <div ng-repeat="Tag in tags">
+                <div class="tag shadow" ng-click="readTagPost(Tag.tag);">{{Tag.tag}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-2 border">
+            <div id="headImg"><img alt="头像" src="{{authorImg}}"></div>
+            <div id="introduction">
+            	<div id="name" class="selfInfo">{{authorName}}</div>
+            	<div id="sex" class="selfInfo">{{authorSex}}</div>
+            	<div id="motto" class="selfInfo">{{authorMotto}}</div>
+            	<div id="level" class="selfInfo">{{authorActivity}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

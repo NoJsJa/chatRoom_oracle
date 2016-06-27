@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.ApplicationConstants;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class messageServlet extends HttpServlet {

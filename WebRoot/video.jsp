@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>视频通话</title>
+    <title>启航 VIDEO</title>
     <script src="${path}/javascript/lib/jquery-2.1.4.js"></script>
     <script src="${path}/javascript/video.js"></script>
     <link rel="stylesheet" href="${path}/css/video.css">

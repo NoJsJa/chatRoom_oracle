@@ -56,6 +56,10 @@
     <servlet-name>singleChat</servlet-name>
     <servlet-class>servlet.singleChat</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>blogServlet</servlet-name>
+  	<servlet-class>servlet.blogServlet</servlet-class>
+  </servlet>
 
 	<!-- <session-config>
 		<session-timeout>10</session-timeout>
@@ -105,6 +109,10 @@
   <servlet-mapping>
     <servlet-name>singleChat</servlet-name>
     <url-pattern>/servlet/singleChat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>blogServlet</servlet-name>
+  	<url-pattern>/blog.do</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

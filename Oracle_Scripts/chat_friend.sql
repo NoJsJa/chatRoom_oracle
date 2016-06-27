@@ -1,6 +1,5 @@
 
-
-CREATE SEQUENCE friendSequence
+CREATE SEQUENCE FRIENDSEQUENCE
        increment by 1    -- 每次递增1
        start with 1       -- 从1开始
        nomaxvalue      -- 没有最大值
@@ -19,8 +18,8 @@ CREATE TABLE friend (
 
 INSERT INTO friend
 (id,name, friend,status) values
-(friendSequence.NEXTVAL,'System', 'Johnson','offline');
+(FRIENDSEQUENCE.NEXTVAL,'System', 'Johnson','offline');
 
 INSERT INTO friend
 (id,name, friend,status) values
-(friendSequence.NEXTVAL,'Johnson', 'System','offline');
+(FRIENDSEQUENCE.NEXTVAL,'Johnson', 'System','offline');

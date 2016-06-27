@@ -6,6 +6,10 @@ $(function() {
     $("#logoutButton").click(function () {
         logout();
     });
+    //进入我的博客
+    $("#blog").click(function(){
+    	enterBlog();
+    });
 	//更新好友列表
     $("#friends").click(function () {
         updateFriendList();
@@ -79,6 +83,13 @@ $(function() {
 	//即时会话会话
 	continueAjaxRequest();
 });
+
+//进入我的博客
+function enterBlog(){
+	
+	var userName = $('#name').text();
+	window.open("/chatRoom/blog.html#!/blogList/" + userName);
+}
 
 //发送视频聊天的请求并进入视频聊天室
 function videoRequest(){
@@ -368,7 +379,6 @@ function updateMessagePage(checkMessageRequest) {
 		updateMessage();
 		return;
 	}
-	var messageNode = document.getElementById("message");
 	var message = JSON.parse(checkMessageRequest.responseText);
 	var firstTr = document.getElementById("firstTr");
 	var hasMessage = false;
@@ -402,7 +412,6 @@ function updateMessagePage(checkMessageRequest) {
 			startSession(name_sender);
 			this.parentNode.removeChild(this);
 			messageDiv.onclick();
-			messageNode.style.backgroundColor = "#8080ff";
 		};
 		messageDiv.onclick = function () {
 			this.parentNode.removeChild(this);
@@ -415,7 +424,6 @@ function updateMessagePage(checkMessageRequest) {
 		hasMessage = true;
 	}
 	checkMessageRequest.abort();
-	messageNode.style.backgroundColor = "#800040";
 	
 	updateMessage();
 }

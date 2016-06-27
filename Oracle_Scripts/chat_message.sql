@@ -8,10 +8,18 @@ CREATE TABLE message (
   PRIMARY KEY (id)
 ) ;
 
-INSERT INTO message
-(id,name_sendTo, name_sender, msg) values
-(friendSequence.NEXTVAL,'System', 'Johnson', 'hello System!');
+--序列自增长
+CREATE SEQUENCE MESSAGESEQUENCE
+       increment by 1    -- 每次递增1
+       start with 1       -- 从1开始
+       nomaxvalue      -- 没有最大值
+       minvalue 1       -- 最小值=1
+       NOCYCLE;      -- 不循环
 
 INSERT INTO message
 (id,name_sendTo, name_sender, msg) values
-(friendSequence.NEXTVAL,'Johnson', 'System', 'hello Johnson!');
+(MESSAGESEQUENCE.NEXTVAL,'System', 'Johnson', 'hello System!');
+
+INSERT INTO message
+(id,name_sendTo, name_sender, msg) values
+(MESSAGESEQUENCE.NEXTVAL,'Johnson', 'System', 'hello Johnson!');
