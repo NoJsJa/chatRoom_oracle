@@ -20,15 +20,15 @@ request.setAttribute("current_user", current_user);
 	<script type="text/javascript" src="${path}/javascript/lib/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="${path}/javascript/xmlRequestPool.js"></script>
 	<script type="text/javascript" src="${path}/javascript/lib/json2.js"></script>
-	<script type="text/javascript" src="${path}/javascript/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="${path}/javascript/lib/ajaxfileupload.js"></script>
 	<script type="text/javascript" src="${path}/javascript/chat.js"></script>
-
+	
   </head>
   
   <body>
   <!-- 背景图片 -->
     <div class="background"></div>
-  	<div id="header" class="inset-shadow"><label id="headerLabel">启航 ROOM</label></div>
+  	<div id="header" class="inset-shadow opacity"><label id="headerLabel">启航 ROOM</label></div>
   	<div class="total">
   	<div class="onlineDiv inset-shadow" id="onlineDiv">|在线用户|
   	</div>
@@ -37,7 +37,7 @@ request.setAttribute("current_user", current_user);
   	</div>
   	<div id="border" class="inset-shadow">
   		<div class="tableBorder" id="tableBorder">
-	  		<table id="showTable">
+	  		<table id="showTable" class="opacity">
 	  		<tr><td class="headTd" colspan="2">- - - 聊 天 信 息 - - -</td></tr>
 	  		</table>
   		</div>
@@ -63,15 +63,15 @@ request.setAttribute("current_user", current_user);
 		    		<td class="emojiTd">
 		    			<select id="emojiList">
 		    				<option value="1"></option>
-		    				<option value="2">  &#12288 &#12288 T_T ||</option>
-		    				<option value="3">  &#12288 &#12288 (=^_^=) </option>
-		    				<option value="4">  &#12288 &#12288 ≧◇≦</option>
-		    				<option value="5">  &#12288 &#12288 ლ(°Д°ლ)</option>
-		    				<option value="6">  &#12288 &#12288 (#￣▽￣#)</option>
-		    				<option value="7">  &#12288 &#12288 ( $ _ $ )</option>
-		    				<option value="8">  &#12288 &#12288 ⊙ω⊙</option>
-		    				<option value="9">  &#12288 &#12288 ♀(￣▽￣)/</option>
-		    				<option value="10">  &#12288 &#12288 ≧▂≦</option>
+		    				<option value="2"> T_T ||</option>
+		    				<option value="3"> (=^_^=) </option>
+		    				<option value="4"> ≧◇≦</option>
+		    				<option value="5"> ლ(°Д°ლ)</option>
+		    				<option value="6"> (#￣▽￣#)</option>
+		    				<option value="7"> ( $ _ $ )</option>
+		    				<option value="8"> ⊙ω⊙</option>
+		    				<option value="9"> ♀(￣▽￣)/</option>
+		    				<option value="10"> ≧▂≦</option>
 		    			</select>
 		    		</td>
 		    	</tr>

@@ -264,12 +264,17 @@ body {
 	background-color: #c0c0c0;
 }
 
+.opacity{
+	ilter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80; 
+}
+
 *{
-	ilter:alpha(opacity=96);
-	-moz-opacity:0.96;
-	-khtml-opacity: 0.96;
-	opacity: 0.96;
 	font-weight:bold;
-	box-sizing: border-box; 
 	color: white;
+	text-align: center;
+	box-sizing: border-box; 
+	font-size: 18px;
 }

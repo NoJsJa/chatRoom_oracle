@@ -335,9 +335,9 @@ function onlineChange(request) {
 				var accountDiv = document.createElement("div");
 				accountDiv.setAttribute("class", "onlineAccount");
 				accountDiv.setAttribute("name", "accountDiv");
-				accountDiv.innerHTML = name[n];
+				accountDiv.innerHTML = name[m];
 				accountDiv.onclick = function(){
-					window.open("/chatRoom/blog.html#!/blogList/" + name[m]);
+					window.open("/chatRoom/blog.html#!/blogList/" + name[m].trim());
 				};
 				onlineCount.appendChild(accountDiv);
 			})();

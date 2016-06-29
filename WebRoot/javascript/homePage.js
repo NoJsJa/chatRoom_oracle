@@ -441,7 +441,7 @@ function sendSingleMessage() {
 	}
 	//消息发送对象
 	var name_sendTo = document.getElementById("titleDetails").innerText;
-	if(name_sendTo.trim() == "启 航 Zone"){
+	if(name_sendTo.trim() == "启 航 ZONE"){
 		return;
 	}
 	
@@ -461,7 +461,7 @@ function sendImgMessage(imgIndex) {
 	
 	//消息发送对象
 	var name_sendTo = document.getElementById("titleDetails").innerText;
-	if(name_sendTo.trim() == "启 航 Zone"){
+	if(name_sendTo.trim() == "启 航 ZONE"){
 		return;
 	}
 	

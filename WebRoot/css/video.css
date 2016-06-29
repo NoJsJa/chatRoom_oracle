@@ -3,13 +3,13 @@
     display: none;
 }
 
-body {
-    /*position: fixed; right: 0; bottom: 0;*/
+#background{
+	position: fixed; right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
-    background: url("/chatRoom/img/7.jpg") no-repeat;
+    background: url("/chatRoom/img/5.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -22,13 +22,10 @@ header{
     min-width: 40em;
     text-align: center;
     line-height: 4em;
-    background-color: #9bcdff/* #c0c0c0 */;
+    background-color: #9bcdff;
     text-align: center;
     border: solid 2px grey;
-    border-radius: 30%;
-    -moz-opacity:0.80;
-    -khtml-opacity: 0.80;
-    opacity: 0.80;
+    border-radius: 8px;
 }
 
 .online{
@@ -115,6 +112,10 @@ header label{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    ilter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
 }
 
 #sendDiv{
@@ -237,9 +238,10 @@ header label{
 }
 
 .opacity{
-    -moz-opacity:0.90;
-    -khtml-opacity: 0.90;
-    opacity: 0.90;
+    ilter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
 }
 
 .font{

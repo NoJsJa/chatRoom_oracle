@@ -1,13 +1,11 @@
 package dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import oracle.net.aso.n;
 import bean.blog;
 import bean.comment;
 import net.sf.json.JSONArray;

@@ -26,11 +26,14 @@ header{
     min-width: 40em;
     text-align: center;
     line-height: 3em;
-    background-color: #9bcdff/* #c0c0c0 */;
+    background-color: #9bcdff;
     text-align: center;
     border: solid 2px grey;
-    border-radius: 30%;
-    -moz-opacity:0.80;
+    border-radius: 8px;
+}
+
+.opacity{
+	-moz-opacity:0.80;
     -khtml-opacity: 0.80;
     opacity: 0.80;
 }
@@ -224,10 +227,6 @@ header label{
 }
 
 *{
-	ilter:alpha(opacity=96);
-	-moz-opacity:0.96;
-	-khtml-opacity: 0.96;
-	opacity: 0.96;
 	font-weight:bold;
 	box-sizing: border-box; 
 	text-align: center;

@@ -49,6 +49,7 @@ var messageNode = 0;
 
 })(jQuery);
 
+//新建socket连接，并开启摄像头视频传输
 $(function() {
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext("2d");
@@ -153,7 +154,7 @@ function checkMessageNode(){
 function webSocketFuc() {
     var canvas2 = document.getElementById('canvas2');
     var name_sender = document.getElementById('name_sender').innerText;
-    var name_sendTo = document.getElementById('name_sendTo').innerText;
+    var name_sendTo = "Johnson";	/*document.getElementById('name_sendTo').innerText*/;
     var ctx = canvas2.getContext("2d");
     var wsServer = 'ws://127.0.0.1:8888',
         wss = new WebSocket(wsServer);

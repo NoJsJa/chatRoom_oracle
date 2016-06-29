@@ -62,7 +62,8 @@ html {
 	max-height: 40px;
 	clear: both;
 	overflow-y: scroll;
-	background-color: #528787;
+	background-color: #4e9c9c;
+	margin-top: 1em;
 }
 
 .emoji {
@@ -140,12 +141,12 @@ td {
 	margin: inherit; 
 	height:auto;
 	min-height: 30px;
-	background:#dedede;
+	background:#6ab5b5;
 	border-radius: 8px; /* 圆角 */
-	ilter:alpha(opacity=60);
-	-moz-opacity:0.70;
-	-khtml-opacity: 0.70;
-	opacity: 0.70;
+	ilter:alpha(opacity=90);
+	-moz-opacity:0.90;
+	-khtml-opacity: 0.90;
+	opacity: 0.90;
 }
 /* 设置圆角 */
 .arrow {
@@ -156,7 +157,7 @@ td {
 	height:0;
 	font-size:0;
 	border:solid 8px;
-	border-color: #8080c0 #dedede #8080c0 #8080c0;
+	border-color: #c0c0c0 #6ab5b5 #c0c0c0 #c0c0c0;
 }
 
 .td3 {
@@ -169,13 +170,6 @@ td {
 .emojiTd {
 	width: 10%; 
 	border: solid 2px white;
-}
-
-.headTd {
-	background-color: #c0c0c0;
-	border: solid 5px white;
-	color: #800000;
-	border-radius: 30%;
 }
 
 .quickTd {
@@ -238,7 +232,7 @@ select {
 	height: 70px;
 	margin: 0px auto;
 	border: solid 2px grey;
-	border-radius: 30%;
+	border-radius: 8px;
 	min-width: 1150px;
 	margin-top: 50px;
 	ilter:alpha(opacity=80);
@@ -255,10 +249,18 @@ select {
 	margin-top: 50px;
 	min-width: 600px;
 	max-width: 1100px;
-	background-color: #8080c0;
+	background-color: #c0c0c0;
 	display: inline-block;
 	border: solid 1px white;
 }
+
+.headTd {
+	background-color: #9bcdff;
+	border: solid 5px white;
+	color: #800000;
+	border-radius: 30%;
+}
+
 /* 边框的阴影 */
 .shadow {
 	-webkit-box-shadow: 10px 10px 25px #000040;
@@ -307,10 +309,6 @@ select {
 }
 
 *{
-	ilter:alpha(opacity=96);
-	-moz-opacity:0.96;
-	-khtml-opacity: 0.96;
-	opacity: 0.96;
 	font-weight:bold;
 }
 
@@ -392,10 +390,10 @@ select {
 }
 
 .opacity{
-	ilter:alpha(opacity=96);
-	-moz-opacity:0.96;
-	-khtml-opacity: 0.96;
-	opacity: 0.96;
+	ilter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
 }
 
 .headerImgMessage{

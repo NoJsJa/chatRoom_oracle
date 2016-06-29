@@ -33,7 +33,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<div id="logo" class="titleDiv"></div>
     	<div id="name" class="titleDiv inset-shadow">${sessionScope.name}</div>
     	<div id="quit" class="titleDiv"><input type="button" id="logoutButton" name="logoutButton" class="inset-shadow" value="注 销" ></div>
-    	<div id="tableDiv">
+    	<div id="tableDiv" class="opacity">
     		<div id="listDiv">
     			<div id="firstTr">
     				<label class="firstTr_nomessage">---- 没 有 新 消 息 额 ----</label>
@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<div id="closeSession" class="inset-shadow">退出会话</div>
     	
     	<div id="messageDetails" class="inset-shadow">
-    		<div id="message2" class="inset-shadow"></div>
+    		<div id="message2" class="inset-shadow opacity"></div>
     		<div id="info">
     			<div id="sendtoImgInfo"></div>
     			<div id="otherInfo">

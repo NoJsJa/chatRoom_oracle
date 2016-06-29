@@ -16,11 +16,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link rel="stylesheet" href="${path}/css/video.css">
 </head>
 
-<body class="opacity">
+<body>
 
 <video id="video"></video>
 
-<header class="inset-shadow">
+<div id="background"></div>
+
+<header class="inset-shadow opacity">
     <label>启航VIDEO</label>
 </header>
 
@@ -37,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <canvas  id="canvas" class="inset-shadow"></canvas><br>
     </div>
     <div id="chatDiv">
-        <div id="chat" class="inset-shadow"></div>
+        <div id="chat" class="inset-shadow opacity"></div>
         <div id="emojiDiv"></div>
         <div id="sendDiv">
             <input type="text" id="test" placeholder="请输入聊天信息"/>

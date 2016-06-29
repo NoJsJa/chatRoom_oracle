@@ -292,6 +292,7 @@ blogApp.controller('readTagCtrl',['$scope','$routeParams','$http','$location',
             });
         }
         readAuthorData();
+        
     }
 ]);
 
@@ -338,6 +339,22 @@ blogApp.controller('readTagPostCtrl',['$scope','$routeParams','$http',
             });
         }
         readAuthorData();
+        
+      //删除博客
+        $scope.deleteBlog = function (title,author) {
+            $http({
+                method:'POST',
+                url:'/chatRoom/blog.do?action=deletePost',
+                params:{
+                    'blogAuthor':author,
+                    'blogTitle':title
+                }
+            }).success(function (data,header,config,status) {
+                readTagPost();
+            }).error(function (data,header,config,status) {
+                alert('error');
+            });
+        };
     }
 ]);
 

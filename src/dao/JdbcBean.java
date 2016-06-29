@@ -331,6 +331,7 @@ public class JdbcBean {
 		return result;
 	}
 	
+	//删除朋友
 	public void deleteFriend(String name, String friendName) {
 		
 		String sqlString = "delete from friend where name=" + "'" + name +"'" + " and " + "friend=" + "'" + friendName + "'";
@@ -385,7 +386,7 @@ public class JdbcBean {
 	
 	//得到用户查询结果
 	public void getQueryResult(String name, String sex, String activity, List<person> personList, int index) {
-		
+	
 		getConnection();
 		ResultSet rs = null;
 		//查询语句
@@ -409,9 +410,9 @@ public class JdbcBean {
 		
 		if (activity != null && !activity.equals("none")) {
 			if (whereCondition.length() == 0) {
-				whereCondition += " where activity >= " + "'" + activity + "'";
+				whereCondition += " where activity >= " + activity;
 			}else{
-				whereCondition += " and activity >= " + "'" + activity + "'";
+				whereCondition += " and activity >= " + activity;
 			}
 		}
 		//筛选后的查询语句
@@ -428,7 +429,6 @@ public class JdbcBean {
 				p.setSex(rs.getString("sex"));
 				p.setMotto(rs.getString("motto"));
 				p.setActivity(rs.getString("activity"));
-				/*p.setCreateTime(rs.getTimestamp("create_time"));*/
 				personList.add(p);
 				//读取10条就返回
 				if (--readCount == 0) {

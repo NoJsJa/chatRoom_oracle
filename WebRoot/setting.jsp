@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <input type="button" id="backButton" value="<=">
   
-  <header class="inset-shadow">
+  <header class="inset-shadow opacity">
     <label>启航 SETTING</label>
 </header>
   

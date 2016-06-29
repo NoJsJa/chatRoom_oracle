@@ -10,8 +10,8 @@ CREATE TABLE chat_user (
 
 INSERT INTO chat_user
 (name, password, sex, motto, activity) values
-('System', 'root', '男', '生当为人杰', '0');
+('System', 'root', '男生', '生当为人杰', '0');
 
 INSERT INTO chat_user
 (name, password, sex, motto, activity) values
-('Johnson', '123456', '男', '死亦为鬼雄', '50');
+('Johnson', '123456', '男生', '死亦为鬼雄', '50');

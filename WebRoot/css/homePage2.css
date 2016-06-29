@@ -50,7 +50,7 @@
 #info {
 	width: 30%;
 	float: left;
-	border: solid 3px #800040;
+	border: solid 1px #800040;
 }
 
 #senderImgInfo {
@@ -158,11 +158,6 @@
 	color: #ac0056;
 }
 
-*{
-	text-align: center;
-	box-sizing: border-box; 
-	font-size: 18px;
-}
 
 
 
