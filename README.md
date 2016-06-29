@@ -1,3 +1,6 @@
-# chatRoom_oracle
-The project is the same as the chatRoom project in my Repositories, but I use oracle db this time to replace mysql, also including some bugs fix and page-layout changing. More better!
+Javaweb project about chatRoom using Ajax,JQuery,Javascript,Bootstrap,AngularJS,websocket and a little bit of Nodejs. This is my first complete Javaweb Project, not use any framework like Spring and so on, now i am working on it. Something i have to say is that the best solution for web chatRoom is not Ajax long connection, this tech is too old, it's to use websocket, Just in video-chat module, I use it. 
+
+The total project is made of four main function modules, including person-to-person chatRoom, multi-chatRoom, video-chatRoom and Blog module. The blog module use AngularJS by Google which is the best framework to bulid SPA(single page application) and some Bootstrap stylesheet. The video-chatRoom module use websocket and nodejs, Html5 api let me to get the camera data then using html5 canvas to draw images from camera and video-server(nodejs). The other two chat-modules are build with Ajax, so I have to handle DOM Manipulation using Jquery or JavaScript native method.
+the nodejs server side is a Repository named 'node-video' in my Repositories, it's necessary to run it when you want to do a video chat in my chatRoom project.
+
 When clone this project to local. you need to change it's name to "chatRoom" which now is "chatRoom_oracle", or you will encounter some errors.
